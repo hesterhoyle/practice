@@ -1,0 +1,56 @@
+// let coffeeOrder = [
+//     "Liam - Cappuccino",
+//     "Leona - Cortado",
+//     "Charlie - Whatever is new"
+// ];
+// coffeeOrder[2] = "Ann - Vanilla Latte"
+// console.log(coffeeOrder)
+
+// let favoriteSongs = [
+//     "Kenshi Yonezu - Loser",
+//     "Gen Hoshino - Pop Virus",
+//     "LiSA - Crossing Road"
+// ];
+
+// favoriteSongs.push("Kenshi Yonezu - Lemon")
+// console.log(favoriteSongs)
+// favoriteSongs.pop()
+// console.log(favoriteSongs)
+
+// console.log(favoriteSongs[2])
+// console.log(favoriteSongs.length)
+
+
+// let websites = [
+//     "Google.com",
+//     "Amazon.co.uk",
+//     "Buzzfeed.com"
+// ];
+// websites.push("Disney.com")
+// websites.push("Twitter.com")
+// websites.pop()
+// console.log(websites)
+
+
+// let colors = [
+//     "red", "blue", "green", "orange", "yellow"
+// ]
+// // Here is our default array:
+// console.log(colors)
+
+// // Using .shift to remove the first item in the array
+// colors.shift()
+// console.log(colors)
+
+// // Using .unshift('purple') to add purple to the start of the array
+// colors.unshift("purple")
+// console.log(colors)
+
+// //make a new array using a portion of existing array
+// let colors2 = colors.slice(1,4)
+// console.log(colors2)
+
+// //at position 2, remove 1 item and add in new item
+// colors.splice(2, 1, "gold")
+// console.log(colors)
+
