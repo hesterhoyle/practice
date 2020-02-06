@@ -1,0 +1,45 @@
+// // Practicing Functions relating to a cash machine
+
+// // Function to check if PIN matches to allow account access
+// let pNum = 1234
+
+// const pCheck = (pinCode, account) => {
+//     if (pinCode == pNum) {
+//         console.log(`You may now access account ${account}`)
+//     } else {
+//         console.log("ERROR, incorrect PIN")
+//     }
+// }
+// pCheck(1233, 998765)
+
+
+// // Function to check if enough money in account for withdrawing
+// let accBalance = 500
+
+// const cashWithdraw = (amount, accNum) => {
+//     if (amount <= accBalance) {
+//         console.log(`${amount} withdrawn from account ${accNum}`)
+//     } else if (amount > accBalance) {
+//         console.log(`ERROR, Not enough in account ${accNum}`)
+//     }
+// }
+// cashWithdraw(500, 426488)
+
+
+// Attempting to combine the two, so PIN needs to be correct to withdraw money, as does the account balance
+let pNum = 1234
+let accBalance = 500
+
+const cashWithdraw = (pin, account, amount) => {
+    if (pNum === pin && amount <= accBalance) {
+        console.log(`£${amount} withdrawn from account ${account}`)
+    } else if (pNum != pin && amount <= accBalance) {
+        console.log(`Incorrect PIN for account ${account}`)
+    } else if (pNum === pin && amount >= accBalance) {
+        console.log(`Not enough in account ${account}. Balance is £${accBalance}`)
+    } else {
+        console.log("ERROR")
+    }
+}
+
+cashWithdraw(1234, 999999, 800)
